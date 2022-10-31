@@ -128,10 +128,8 @@ Secrets are currently not supported in the body of a REST Connector.
 
 ### Connection timeout
 
-If you want to set connection timeout in your request set it in seconds in **Connection Timeout** section.
-This is not required field, default value - 20 seconds;
-For setting infinite timeout - set '0'.
-
+To set connection timeout in your request, set it in seconds in the **Connection Timeout** section.
+This is not a required field, with a default value of 20 seconds. To set an infinite timeout, set this value to `0`.
 
 ![rest connector http request body](../img/connectors-rest-http-connection-timeout.png)
 
