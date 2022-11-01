@@ -69,14 +69,14 @@ In the **Routing** section you must set routing data (free feel use JSON format 
 ```
 
 For a **URI** type connection, the required fields are `exchange` and `routingKey`.
-For a **Credentials** type connection, all fields are required.
+For a **Credentials** type connection, the required fields are `exchange`, `routingKey`, `virtualHost`, `hostName`, and `port`.
 
 ![connectors-rabbitmq-routing](../img/connectors-rabbitmq-routing.png)
 
 ## Message
 
-1. Set your message payload to **Message** section. Message can be text and JSON format.
-2. (Optional) Set message properties (JSON format or FEEL expression format) to **Properties** section. Follow [RabbitMQ documentation](https://www.rabbitmq.com/publishers.html#message-properties) for learn more about message properties.
+1. In the **Message** section, insert the message payload. The message can be text and JSON format.
+2. (Optional) In the **Properties** section, insert the message properties in JSON or FEEL expression format. Follow [RabbitMQ documentation](https://www.rabbitmq.com/publishers.html#message-properties) for learn more about message properties.
 
 ![connectors-rabbitmq-message-with-properties](../img/connectors-rabbitmq-message-with-properties.png)
 
