@@ -12,7 +12,7 @@ To use a **REST Connector** in your process, either change the type of existing 
 
 ## Make your REST Connector executable
 
-To make the **REST Connector** executable, choose needed authentication type and fill out the mandatory fields highlighted in red in the properties panel:
+To make the **REST Connector** executable, choose the required authentication type and fill out the mandatory fields highlighted in red in the properties panel:
 
 ![rest Connector red properties](../img/connectors-rest-red-properties.png)
 
