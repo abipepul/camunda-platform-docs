@@ -9,20 +9,20 @@ The **RabbitMQ Connector** allows you to connect your BPMN service with [RabbitM
 
 ## Prerequisites
 
-To use the **RabbitMQ Connector**, you need to have an installed RabbitMQ server and credentials to use it.
+To use the **RabbitMQ Connector**, you need to have an installed RabbitMQ server and relevant credentials.
 It is highly recommended not to expose your secret credentials as plain text, but rather use Camunda secrets. See [this appendix entry](#how-do-i-store-secrets-for-my-connector) to learn more.
 
 :::note
-Ensure you write out the correct exchange name and routing key, because the **RabbitMQ Connector** can't throw an exception if they are incorrect.
+Ensure you write out the correct exchange name and routing key, as the **RabbitMQ Connector** can't throw an exception if they are incorrect.
 :::
 
 ## Create a RabbitMQ Connector task
 
 To use the **RabbitMQ Connector** in your process, either change the type of existing task by clicking on it and using the wrench-shaped **Change type** context menu icon, or create a new Connector task by using the **Append Connector** context menu. Follow our [guide to using Connectors](../use-connectors.md) to learn more.
 
-## Make your RabbitMQ Connector for sending messages executable
+## Connecting to RabbitMQ and sending messages
 
-To make the **RabbitMQ Connector** executable, choose the needed connection type in the **Authentication** section and fill out the mandatory fields highlighted in red in the properties panel:
+To connect to RabbitMQ, choose the required connection type in the **Authentication** section and complete the mandatory fields highlighted in red in the properties panel:
 
 ![connectors-rabbitmq-red-properties](../img/connectors-rabbitmq-red-properties.png)
 
@@ -48,7 +48,7 @@ For a URI connection, take the following steps:
 
 ### Credentials type connection
 
-For a credentials connection, take the following steps:
+To connect with credentials, take the following steps:
 
 1. Click the **Username/Password** connection type in the **Authentication** section
 2. Set the **Password** to `Password`.
@@ -56,8 +56,9 @@ For a credentials connection, take the following steps:
 
 ## Routing data
 
-In the **Routing** section you must set routing data (free feel use JSON format and FEEL expression format):
+In the **Routing** section you must set the routing data attributes (you can either use JSON or a FEEL expression):
 
+JSON :
 ```json
 {
   "exchange": "<your-rabbitmq-exchange-name>",
@@ -65,6 +66,16 @@ In the **Routing** section you must set routing data (free feel use JSON format 
   "virtualHost": "<your-rabbitmq-virtual-host-name>",
   "hostName": "<your-rabbitmq-host-name-or-ip-address>",
   "port": "<your-rabbitmq-port-number>"
+}
+```
+FEEL :
+```
+{
+  exchange: "<your-rabbitmq-exchange-name>",
+  routingKey: "<your-rabbitmq-routing-key-name>",
+  virtualHost: "<your-rabbitmq-virtual-host-name>",
+  hostName: "<your-rabbitmq-host-name-or-ip-address>",
+  port: "<your-rabbitmq-port-number>"
 }
 ```
 
@@ -76,7 +87,7 @@ For a **Credentials** type connection, the required fields are `exchange`, `rout
 ## Message
 
 1. In the **Message** section, insert the message payload. The message can be text and JSON format.
-2. (Optional) In the **Properties** section, insert the message properties in JSON or FEEL expression format. Follow [RabbitMQ documentation](https://www.rabbitmq.com/publishers.html#message-properties) for learn more about message properties.
+2. (Optional) In the **Properties** section, insert the message properties in JSON or as a FEEL expression. Follow [RabbitMQ documentation](https://www.rabbitmq.com/publishers.html#message-properties) for learn more about message properties.
 
 ![connectors-rabbitmq-message-with-properties](../img/connectors-rabbitmq-message-with-properties.png)
 
