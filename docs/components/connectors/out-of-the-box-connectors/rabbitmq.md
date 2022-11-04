@@ -59,6 +59,7 @@ To connect with credentials, take the following steps:
 In the **Routing** section you must set the routing data attributes (you can either use JSON or a FEEL expression):
 
 JSON :
+
 ```json
 {
   "exchange": "<your-rabbitmq-exchange-name>",
@@ -68,7 +69,9 @@ JSON :
   "port": "<your-rabbitmq-port-number>"
 }
 ```
+
 FEEL :
+
 ```
 {
   exchange: "<your-rabbitmq-exchange-name>",
