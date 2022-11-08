@@ -617,7 +617,7 @@ module.exports = {
         },
 
         {
-          "Build custom Connectors": [
+          "Integration Framework": [
             docsLink(
               "Connector templates",
               "components/connectors/custom-built-connectors/connector-templates/"
@@ -719,12 +719,35 @@ module.exports = {
     },
 
     {
+      Tasklist: [
+        docsLink(
+          "Introduction",
+          "components/tasklist/introduction-to-tasklist/"
+        ),
+
+        {
+          "User guide": [
+            docsLink(
+              "Overview and example use case",
+              "components/tasklist/userguide/using-tasklist/"
+            ),
+            docsLink(
+              "Updating Tasklist",
+              "components/tasklist/userguide/updating-tasklist-cloud/"
+            ),
+          ],
+        },
+      ],
+    },
+
+    {
       Optimize: [
         "components/what-is-optimize",
 
         {
           "User guide": [
             "components/userguide/collections-dashboards-reports",
+            "components/userguide/user-permissions",
             "components/userguide/data-sources",
 
             {
@@ -793,28 +816,6 @@ module.exports = {
                 "components/userguide/additional-features/process-variants-comparison",
               ],
             },
-          ],
-        },
-      ],
-    },
-
-    {
-      Tasklist: [
-        docsLink(
-          "Introduction",
-          "components/tasklist/introduction-to-tasklist/"
-        ),
-
-        {
-          "User guide": [
-            docsLink(
-              "Overview and example use case",
-              "components/tasklist/userguide/using-tasklist/"
-            ),
-            docsLink(
-              "Updating Tasklist",
-              "components/tasklist/userguide/updating-tasklist-cloud/"
-            ),
           ],
         },
       ],
@@ -1213,6 +1214,7 @@ module.exports = {
             docsLink("Ruby", "apis-clients/community-clients/ruby/"),
             docsLink("Rust", "apis-clients/community-clients/rust/"),
             docsLink("Spring", "apis-clients/community-clients/spring/"),
+            docsLink("Quarkus", "apis-clients/community-clients/quarkus/"),
           ],
         },
         docsLink(
@@ -1651,7 +1653,10 @@ module.exports = {
 
     {
       "Web Modeler (Beta)": [
-        docsLink("Installation", "self-managed/web-modeler/installation/"),
+        docsLink(
+          "Installation",
+          "self-managed/modeler/web-modeler/installation/"
+        ),
       ],
     },
 

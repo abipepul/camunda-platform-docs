@@ -259,7 +259,7 @@
             "components/connectors/out-of-the-box-connectors/sendgrid",
             "components/connectors/out-of-the-box-connectors/slack"
           ],
-          "Build custom Connectors": [
+          "Integration Framework": [
             "components/connectors/custom-built-connectors/connector-templates",
             "components/connectors/custom-built-connectors/connector-sdk"
           ]
@@ -294,6 +294,15 @@
             "components/operate/userguide/selections-operations",
             "components/operate/userguide/delete-finished-instances",
             "components/operate/userguide/operate-feedback-and-questions"
+          ]
+        }
+      ],
+      "Tasklist": [
+        "components/tasklist/introduction-to-tasklist",
+        {
+          "User guide": [
+            "components/tasklist/userguide/using-tasklist",
+            "components/tasklist/userguide/updating-tasklist-cloud"
           ]
         }
       ],
@@ -503,15 +512,6 @@
                 }
               ]
             }
-          ]
-        }
-      ],
-      "Tasklist": [
-        "components/tasklist/introduction-to-tasklist",
-        {
-          "User guide": [
-            "components/tasklist/userguide/using-tasklist",
-            "components/tasklist/userguide/updating-tasklist-cloud"
           ]
         }
       ],

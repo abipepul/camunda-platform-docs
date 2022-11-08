@@ -64,6 +64,7 @@ module.exports = {
         "components/concepts/variables",
         "components/concepts/expressions",
         "components/concepts/workflow-patterns",
+        "components/concepts/process-instance-modification",
       ],
       Console: [
         "components/console/introduction-to-console",
@@ -221,7 +222,7 @@ module.exports = {
             "components/connectors/out-of-the-box-connectors/sendgrid",
             "components/connectors/out-of-the-box-connectors/slack",
           ],
-          "Build custom Connectors": [
+          "Integration Framework": [
             "components/connectors/custom-built-connectors/connector-templates",
             "components/connectors/custom-built-connectors/connector-sdk",
           ],
@@ -260,6 +261,15 @@ module.exports = {
           ],
         },
       ],
+      Tasklist: [
+        "components/tasklist/introduction-to-tasklist",
+        {
+          "User guide": [
+            "components/tasklist/userguide/using-tasklist",
+            "components/tasklist/userguide/updating-tasklist-cloud",
+          ],
+        },
+      ],
       Optimize: [
         optimizeLink("What is Optimize?", "components/what-is-optimize/"),
         {
@@ -267,6 +277,10 @@ module.exports = {
             optimizeLink(
               "Collections, dashboards, and reports",
               "components/userguide/collections-dashboards-reports/"
+            ),
+            optimizeLink(
+              "User permissions",
+              "components/userguide/user-permissions/"
             ),
             optimizeLink("Data sources", "components/userguide/data-sources/"),
             {
@@ -420,15 +434,6 @@ module.exports = {
                 ),
               ],
             },
-          ],
-        },
-      ],
-      Tasklist: [
-        "components/tasklist/introduction-to-tasklist",
-        {
-          "User guide": [
-            "components/tasklist/userguide/using-tasklist",
-            "components/tasklist/userguide/updating-tasklist-cloud",
           ],
         },
       ],
@@ -613,6 +618,7 @@ module.exports = {
             "apis-clients/community-clients/ruby",
             "apis-clients/community-clients/rust",
             "apis-clients/community-clients/spring",
+            "apis-clients/community-clients/quarkus",
           ],
         },
         "apis-clients/build-your-own-client",
@@ -634,6 +640,7 @@ module.exports = {
   "Self-Managed": [
     "self-managed/about-self-managed",
     {
+      Architecture: ["self-managed/platform-architecture/overview"],
       Installation: [
         "self-managed/platform-deployment/overview",
         {
@@ -997,7 +1004,18 @@ module.exports = {
       "Zeebe Gateway": ["self-managed/zeebe-gateway-deployment/zeebe-gateway"],
     },
     {
-      "Web Modeler (Beta)": ["self-managed/web-modeler/installation"],
+      Modeler: [
+        {
+          "Web Modeler (Beta)": [
+            "self-managed/modeler/web-modeler/installation",
+          ],
+        },
+        {
+          "Desktop Modeler": [
+            "self-managed/modeler/desktop-modeler/deploy-to-self-managed",
+          ],
+        },
+      ],
     },
     {
       "Backup and restore": [

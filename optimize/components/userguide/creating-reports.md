@@ -1,7 +1,7 @@
 ---
 id: creating-reports
 title: Creating reports
-description: "Reports offer the ability to view your data from different angles, and thus capture all aspects that influence your processes, show new trends, or depict your current business state."
+description: "View your data from different angles and capture all aspects that influence your processes, show new trends, or depict your current business state."
 ---
 
 ## Overview
@@ -23,3 +23,9 @@ To create a custom report based on a key performance indicator (KPI) you’d lik
 6. In the gray text box to the right, confirm your data source, and select what you’d like to review from the process. You can also group by topics such as duration or start date.
 7. If you’d like, filter the process instance or flow nodes. For example, you can filter by duration, only viewing process instances running for more than seven days.
 8. Finally, you have the option to view particular sets of data from the instance, like instance count or absolute value, by selecting the gear icon to the left of your data customization. You can also choose how you’d like to visualize your data in the box beneath **Visualization** (i.e. bar chart, pie chart, etc.). Once you’ve made your selections, click **Save**.
+
+## Share your report
+
+Optimize offers collaborative capabilities, too. Click the **Share** tab to share a created report. Toggle to **Enable sharing**, and copy or embed the provided link. Colleagues without access to Optimize can still view your report with the shared link.
+
+Learn more about [user permissions](./user-permissions.md).

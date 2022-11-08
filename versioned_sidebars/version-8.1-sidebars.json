@@ -55,7 +55,8 @@
         "components/concepts/incidents",
         "components/concepts/variables",
         "components/concepts/expressions",
-        "components/concepts/workflow-patterns"
+        "components/concepts/workflow-patterns",
+        "components/concepts/process-instance-modification"
       ],
       "Console": [
         "components/console/introduction-to-console",
@@ -286,7 +287,7 @@
             "components/connectors/out-of-the-box-connectors/sendgrid",
             "components/connectors/out-of-the-box-connectors/slack"
           ],
-          "Build custom Connectors": [
+          "Integration Framework": [
             "components/connectors/custom-built-connectors/connector-templates",
             "components/connectors/custom-built-connectors/connector-sdk"
           ]
@@ -322,6 +323,15 @@
             "components/operate/userguide/delete-finished-instances",
             "components/operate/userguide/operate-feedback-and-questions",
             "components/operate/userguide/process-instance-modification"
+          ]
+        }
+      ],
+      "Tasklist": [
+        "components/tasklist/introduction-to-tasklist",
+        {
+          "User guide": [
+            "components/tasklist/userguide/using-tasklist",
+            "components/tasklist/userguide/updating-tasklist-cloud"
           ]
         }
       ],
@@ -539,15 +549,6 @@
           ]
         }
       ],
-      "Tasklist": [
-        "components/tasklist/introduction-to-tasklist",
-        {
-          "User guide": [
-            "components/tasklist/userguide/using-tasklist",
-            "components/tasklist/userguide/updating-tasklist-cloud"
-          ]
-        }
-      ],
       "Best Practices": [
         "components/best-practices/best-practices-overview",
         {
@@ -748,7 +749,8 @@
             "apis-clients/community-clients/python",
             "apis-clients/community-clients/ruby",
             "apis-clients/community-clients/rust",
-            "apis-clients/community-clients/spring"
+            "apis-clients/community-clients/spring",
+            "apis-clients/community-clients/quarkus"
           ]
         },
         "apis-clients/build-your-own-client"
@@ -769,6 +771,7 @@
   "Self-Managed": [
     "self-managed/about-self-managed",
     {
+      "Architecture": ["self-managed/platform-architecture/overview"],
       "Installation": [
         "self-managed/platform-deployment/overview",
         {
