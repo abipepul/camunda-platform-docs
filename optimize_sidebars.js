@@ -598,8 +598,8 @@ module.exports = {
               "components/connectors/out-of-the-box-connectors/googledrive/"
             ),
             docsLink(
-                "RabbitMQ Connector",
-                "components/connectors/out-of-the-box-connectors/rabbitmq/"
+              "RabbitMQ Connector",
+              "components/connectors/out-of-the-box-connectors/rabbitmq/"
             ),
             docsLink(
               "REST Connector",
