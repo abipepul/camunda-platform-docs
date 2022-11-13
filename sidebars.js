@@ -145,6 +145,7 @@ module.exports = {
               "Additional configuration": [
                 "components/modeler/desktop-modeler/flags/flags",
                 "components/modeler/desktop-modeler/plugins/plugins",
+                "components/modeler/desktop-modeler/lint-rules/lint-rules",
                 "components/modeler/desktop-modeler/search-paths/search-paths",
                 "components/modeler/desktop-modeler/telemetry/telemetry",
               ],
