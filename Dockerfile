@@ -1,6 +1,6 @@
 # For local development purposes only
 
-FROM httpd:alpine
+FROM httpd:2-alpine3.19
 
 RUN rm -r /usr/local/apache2/htdocs/*
 COPY /build /usr/local/apache2/htdocs/
